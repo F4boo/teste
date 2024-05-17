@@ -4,7 +4,20 @@
 <title>Joao Pedro é yag</title>
 </head>
 <body>
-    <h1>João Pedro gosta de chupar pitoca</h1>
-<p>Você acha que João Pedro é gay?</p>
-<button>sim</button> <button>não</button>
+    <h1>João Pedro gosta de chupar picolé</h1>
+    <p>Você acha que João Pedro é bonito?</p>
+    <button onclick="mostrarMensagem('sim')">sim</button>
+    <button onclick="mostrarMensagem('não')">não</button>
+    <p id="mensagem"></p>
+
+    <script>
+        function mostrarMensagem(resposta) {
+            var mensagem = document.getElementById("mensagem");
+            if (resposta === 'sim') {
+                mensagem.textContent = "Também acho.";
+            } else if (resposta === 'não') {
+                mensagem.textContent = "Mentiroso!";
+            }
+        }
+    </script>
 </body>
